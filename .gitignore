@@ -1,0 +1,15 @@
+# Derlenmiş dosyalar (Executable)
+*.exe
+*.out
+*.o
+*.obj
+
+# IDE ve Geçici Dosyalar
+.vscode/
+.idea/
+*.layout
+*.depend
+
+# Debug ve Release klasörleri
+Debug/
+Release/

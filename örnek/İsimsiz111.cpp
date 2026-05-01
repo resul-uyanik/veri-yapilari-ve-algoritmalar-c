@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int dizi[100];
+	int i;
+	for(i=0;i<100;i++){
+		dizi[i]=i;
+		printf("%d ",dizi[i]);
+	}
+	int low=0;
+	int high=99;
+	int adim=0;
+	while(low<=high){
+		adim++;
+		printf("%d. adim: \n",adim);
+		printf("low = %d\n",low);
+		printf("high = %d\n",high);
+		int key=777;
+		int mid=(low+high)/2;
+		printf("mid = %d\n",mid);
+		if(dizi[mid]<key){
+			low=mid+1;
+		}
+		if(dizi[mid]>key){
+			high=mid-1;
+		}
+		if(dizi[mid]==key){
+			return mid;
+		}
+	}
+	return printf("bulunamadi");
+	
+	//return 0;
+}
