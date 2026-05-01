@@ -13,3 +13,5 @@
 # Debug ve Release klasörleri
 Debug/
 Release/
+
+*.pdf
